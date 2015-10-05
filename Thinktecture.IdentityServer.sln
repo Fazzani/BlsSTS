@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "src\Tests\Tests.cs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thinktecture.IdentityServer.Protocols", "src\Libraries\Thinktecture.IdentityServer.Protocols\Thinktecture.IdentityServer.Protocols.csproj", "{C129C90C-774C-47D7-A19E-57B31C87AE18}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebTestClient1", "WebTestClient1\WebTestClient1.csproj", "{312707F6-ED2D-4F39-B242-3444386752C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebTestClient2", "WebTestClient2\WebTestClient2.csproj", "{5D17D1AA-FDAE-4E90-B8B7-74DEB40C0E6E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +45,14 @@ Global
 		{C129C90C-774C-47D7-A19E-57B31C87AE18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C129C90C-774C-47D7-A19E-57B31C87AE18}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C129C90C-774C-47D7-A19E-57B31C87AE18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{312707F6-ED2D-4F39-B242-3444386752C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{312707F6-ED2D-4F39-B242-3444386752C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{312707F6-ED2D-4F39-B242-3444386752C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{312707F6-ED2D-4F39-B242-3444386752C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D17D1AA-FDAE-4E90-B8B7-74DEB40C0E6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D17D1AA-FDAE-4E90-B8B7-74DEB40C0E6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D17D1AA-FDAE-4E90-B8B7-74DEB40C0E6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D17D1AA-FDAE-4E90-B8B7-74DEB40C0E6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
