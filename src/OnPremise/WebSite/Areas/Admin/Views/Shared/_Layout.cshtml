@@ -1,0 +1,38 @@
+﻿@{
+  Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="sidebar-wrapper">
+    @Html.Action("Index", "Menu")
+</div>
+<button type="button" id="menu-toggle" class="navbar-toggle collapsed">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+</button>
+
+<section class="config-editor" id="page-content-wrapper">
+    @if (TempData["Message"] != null)
+    {
+    <div class="message">@TempData["Message"]</div>
+    }
+    @RenderBody()
+</section>
+
+@section styles
+{
+    <link href="~/Areas/Admin/Content/Admin.css" rel="stylesheet" />
+}
+@section scripts
+{
+    <script>
+        var cryptoRandomUrl = '@Url.Action("Random", "Home")';
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+    <script src="~/Areas/Admin/Scripts/Admin.js"></script>
+    @RenderSection("scripts", false)
+}
