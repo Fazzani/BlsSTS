@@ -1,0 +1,31 @@
+﻿@using Thinktecture.IdentityServer.Web.App_LocalResources.Shared
+<ul class="nav nav-tabs">
+
+   
+    @if (ViewBag.IsSignedIn)
+    {
+    <li role="presentation">
+        @*@Html.ActionLink(_Menu_cshtml.Home, "index", "home", new { area = "" }, null)*@
+        <a href=" @Url.Action("index", "home", new { area = "" }, null)"><i class="glyphicon glyphicon-home"></i> @_Menu_cshtml.Home </a>
+    </li>
+
+    <li role="presentation" class="pull-right">
+        <a href=" @Url.Action("signout", "account", new { area = "" }, null)"> @Context.User.Identity.Name <i class="glyphicon glyphicon-off"></i></a>
+    </li>
+    }
+    else
+    {
+    <li role="presentation">
+        @Html.ActionLink(_Menu_cshtml.Home, "index", "home", new { area = "" }, null)
+        @Html.ActionLink(_Menu_cshtml.SignIn, "signin", "account", new { area = "" }, null)
+    </li>
+    }
+    @if (ViewBag.IsAdministrator)
+    {
+    <li role="presentation" class="active">
+        @*@Html.ActionLink(_Menu_cshtml.Administration, "index", "home", new { area = "Admin", @class= "glyphicon glyphicon-home" }, null)*@
+        <a href=" @Url.Action("index", "home", new { area = "Admin" }, null)"><i class="glyphicon glyphicon-cog"></i> @_Menu_cshtml.Administration </a>
+    </li>
+    }
+</ul>
+
