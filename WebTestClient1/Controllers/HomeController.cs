@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace WebTestClient1.Controllers
 {
-    //[Authorize]
+   [Authorize]
     public class HomeController : Controller
     {
         public ActionResult Index()
@@ -16,14 +16,14 @@ namespace WebTestClient1.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Your application description page. Client 1";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Your contact page.-  Client 1";
 
             return View();
         }
